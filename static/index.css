@@ -3,10 +3,10 @@
     /* ####  Add your colors  ####  */
 
     --blue: #595ff7;
-    --dark: #272a2f;
+    --dark: rgb(22, 20, 20);
     --red: #fc3f4d;
     --light: #8fc9dc;
-    --textcolor: #c1c1c1;
+    --textcolor: #686565;
     --yellow:#f7c159;
 }
 
@@ -19,6 +19,25 @@ body {
     margin: 0rem;
     padding: 0rem;
     overflow-y: scroll;
+    overflow-x:hidden;
+    width:100%;
+    background-image: url("./images/card2.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 47em 5em ;
+    background-size: 40em 35em;
+
+  }
+  .logo{
+    width:11em;
+    height: 2.5em;
+  }
+  span{
+   font-size: 1.5em;
+  
+  }
+  .navbar{
+    width:100%;
   }
     .navbar-brand{
      float:right;
@@ -33,12 +52,29 @@ body {
    .nav-link{
     
      margin-left:3em;
+     padding-right: 3em;
      
    }
    .btn{
      color:whitesmoke;
      border-radius: 2em;
    }
+
+.sell h1{
+  position:relative;
+  top:3em;
+  right:6em;
+  color: #f1eeee;
+  font-size: 4em;     
+           
+}
+.sell a{
+  position:relative;
+  top:13em;
+  right:24em;
+ 
+
+}
 /* .navbar {
     justify-content: space-around;
     display: flex;
