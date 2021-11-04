@@ -75,6 +75,12 @@ body {
  
 
 }
+.btn {
+  background-color: #ff9900;
+  color: var(--dark);
+  font-size: 1.5em;
+  font-weight: bold;
+}
 /* .navbar {
     justify-content: space-around;
     display: flex;

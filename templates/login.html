@@ -9,13 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/login.css">
     <title>Laifu_coin - Login</title>
 
   </head>
 
   <body >
 
-      <div><h1 style="text-align: center;">Login</h1></div>
+      <!-- <div><h1 style="text-align: center;">Login</h1></div>
         <div>
           {% include 'includes/_messages.html' %}
             
@@ -34,7 +38,38 @@
         </div>
 
         <div><a href="register">Don't have an account? Register now.</a></div>
-        <div><a href="/">Home Page</a></div>       
+        <div><a href="/">Home Page</a></div>    -->
+     <div>
+
+      {% include 'includes/_messages.html' %}
+     <form action="" method="POST">
+        <div class="container">
+        
+          <div class="cover">
+            <div class="head">
+              <h1>Sign In</h1>
+              <img class="logo" src="../static/images/logo.png" alt="" />
+            </div>
+            <div class="form">
+            
+                <label for="inputUsername">Username</label>
+                
+                <input type="text" id="inputUsername" name="username" placeholder=" Username" required="required" autofocus="autofocus" value={{request.form.username}}>
+                <label for="inputPassword">Password</label>
+                <input type="password" id="inputPassword" name="password" placeholder=" Password" required="required" autofocus="autofocus" value={{request.form.password}}>
+    
+                <button type="submit" >Login</button>
+                <br/>
+                <div><a href="register">Don't have an account? Sign Up.</a></div>
+                <div><a href="/">Home Page</a></div>
+            </div>
+          </div>
+    
+       
+        </div>
+        <div class="blur-container"></div>
+      </form>
+    </div>    
       
   </body>
 
