@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/register.css">
 
     <title>Laifu_coin - Register</title>
@@ -51,7 +54,8 @@
         
     </div> -->
     <div>
-
+       
+           
         {% include 'includes/_messages.html' %}
         {% from "includes/_formhelpers.html" import render_field %}
        <form action="" method="POST">
@@ -65,24 +69,26 @@
               <div class="form">
               
                
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="inputUsername" name="name" placeholder="Full Name" required="required" autofocus="autofocus" value={{request.form.name}}>
+                    <!-- <label for="fullName">Full Name</label>
+                    <label for="inputUsername">Username</label> -->
+                    <input type="text" id="inputUsername" name="name" placeholder=" Full Name" required="required" autofocus="autofocus" value={{request.form.name}}>
                     
                
-                    <label for="inputUsername">Username</label>
-                    <input type="text" id="inputUsername" name="username" placeholder="Username" required="required" autofocus="autofocus" value={{request.form.username}}>
+                   
+                    <input type="text" id="inputUsername" name="username" placeholder=" Username" required="required" autofocus="autofocus" value={{request.form.username}}>
                    
                      <br/>
-                    <label for="inputEmail">Email address</label>
-                    <input type="text" id="inputEmail" name="email" placeholder="Email" required="required" autofocus="autofocus" value={{request.form.email}}>
+                    <!-- <label for="inputEmail">Email address</label> -->
+                    <input type="text" id="inputEmail" name="email" placeholder=" Email" required="required" autofocus="autofocus" value={{request.form.email}}>
+                    <br/>
                    
                 
-                    <label for="inputPassword">Password</label>
-                    <input type="password" id="inputPassword" name="password" placeholder="Password" required="required" autofocus="autofocus" value={{request.form.password}}>
+                    <!-- <label for="inputPassword">Password</label> -->
+                    <input type="password" id="inputPassword" name="password" placeholder=" Password" required="required" autofocus="autofocus" value={{request.form.password}}>
                    
                
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirm" placeholder="Confirm Password" required="required" autofocus="autofocus" value={{request.form.confirm}}>
+                    <!-- <label for="confirmPassword">Confirm Password</label> -->
+                    <input type="password" id="confirmPassword" name="confirm" placeholder=" Confirm Password" required="required" autofocus="autofocus" value={{request.form.confirm}}>
                     
                
                  <input type="button" href="/" class="home" ><a href="/"><span>Back</span></a></input>
@@ -97,9 +103,15 @@
           </div>
           <div class="blur-container"></div>
         </form>
-      </div>    
+       
+      </div> 
+      <div class="section">
+        <video autoplay loop muted >
+            <source src="../static/videos/waifu01.mp4" type="video/mp4">
+        </video>
+      </div>   
         
-
+      
 
   </body>
 

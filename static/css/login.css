@@ -1,4 +1,17 @@
+:root {
+
+  /* ####  Add your colors  ####  */
+
+  --blue: #595ff7;
+  --dark: rgb(22, 20, 20);
+  --red: #fc3f4d;
+  --light: #8fc9dc;
+  --textcolor: #686565;
+  --yellow:#f7c159;
+}
+
 body {
+
     background-image: url("../images/black.jpg");
 
     background-repeat: no-repeat;

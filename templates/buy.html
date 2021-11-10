@@ -1,15 +1,38 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/buy.css">
+  <title>Buy</title>
+</head>
+<body>
+  {% extends 'layout.html' %}
 
-{% block body %}
-{% include 'includes/_messages.html' %}
-<p>Your current balance is {{ balance }} Laifu_coin</p>
-{% from "includes/_formhelpers.html" import render_field %}
-<form action="" method="POST">
-  <div>
-    <div>
-      {{render_field(form.amount, class_="form-control")}}
-    </div>
+    {% block body %}
+    {% include 'includes/_messages.html' %}
+  <div class="buy">
+    
+    <p>Your current balance is {{ balance }} Laifu_coin</p>
+    {% from "includes/_formhelpers.html" import render_field %}
+    <form action="" method="POST">
+      <div>
+        <div class="amount">
+          {{render_field(form.amount, class_="form-control")}}
+        </div>
+      </div>
+      <button class="purchase" type="submit">Buy Now</button>
+    </form>
+    {% endblock %}
+
   </div>
-  <button type="submit">Buy Now</button>
-</form>
-{% endblock %}
+  
+ 
+    
+
+</body>
+</html>

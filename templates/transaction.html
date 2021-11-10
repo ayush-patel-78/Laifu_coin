@@ -1,17 +1,40 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/transaction.css">
+  <title>Transaction</title>
+</head>
+<body>
+ 
+    {% extends 'layout.html' %}
 
 {% block body %}
 {% include 'includes/_messages.html' %}
-<p>Your current balance is {{ balance }} Laifu_coin</p>
+<div class="send">
+  <p>Your current balance is {{ balance }} Laifu_coin</p>
 {% from "includes/_formhelpers.html" import render_field %}
 <form method="POST" action="">
-  <div>
+  <div class="username">
     {{render_field(form.username, class_="form-control")}}
   </div>
-  <div>
+  <div class="amount">
     {{render_field(form.amount, class_="form-control")}}
   </div>
   </br>
-  <p><input type="submit" value="Send"></p>
+  <p><input class="send-btn" type="submit" value="Send"></p>
 </form>
 {% endblock %}
+
+  </div>
+
+
+
+  
+</body>
+</html>
