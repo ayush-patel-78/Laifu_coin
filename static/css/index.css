@@ -21,19 +21,19 @@ body {
     overflow-y: scroll;
     overflow-x:hidden;
     width:100%;
-    background-image: url("./images/card2.jpg");
+    background-image: url("../images/card2.jpg");
     background-repeat: no-repeat;
     position: relative;
-    background-position: 47em 5em ;
+    background-position: 47em 3.5em ;
     background-size: 40em 35em;
 
   }
   .logo{
-    width:11em;
-    height: 2.5em;
+    width:7em;
+    height: 1.5em;
   }
   span{
-   font-size: 1.5em;
+   font-size: 1em;
   
   }
   .navbar{
@@ -47,7 +47,7 @@ body {
    } 
    .navbar-brand span{
      color: var(--textcolor);
-     padding: 1em;
+     padding: 0em;
    }
    .nav-link{
     

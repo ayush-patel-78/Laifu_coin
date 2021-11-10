@@ -1,0 +1,98 @@
+:root {
+
+    /* ####  Add your colors  ####  */
+
+    --blue: #595ff7;
+    --dark: rgb(22, 20, 20);
+    --red: #fc3f4d;
+    --light: #8fc9dc;
+    --textcolor: #686565;
+    --yellow:#f7c159;
+}
+
+
+body {
+    /* background-image: url("../images/black.jpg"); */
+
+     /* background-repeat: repeat-y; */
+    /* background-size: 100%; */
+    background-color: #161515;
+    font-family: 'Lato', sans-serif; 
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    /* background: rgba(255,255,255,0.5); */
+    /* backdrop-filter: blur(5px); */
+ 
+  }
+.section-1{
+    position: relative;
+    font-family:'Lato', sans-serif ;
+    z-index:2;
+    overflow-x: hidden;
+    
+    
+}
+
+.logo{
+    width:7em;
+    height: 1.5em;
+  }
+  span{
+   font-size: 1em;
+  
+  }
+  .navbar{
+    width:97rem;
+  }
+    .navbar-brand{
+     float:right;
+     text-align: left;
+     justify-content: left;
+     margin-left: 2em;
+   } 
+   .navbar-brand span{
+     color: var(--textcolor);
+     padding: 0em;
+   }
+   .nav-link{
+    
+     margin-left:2.2em;
+     padding-right: 1em;
+     
+   }
+   .logout{
+       color:black;
+       font-size: 1em;
+       /* font-weight: bold; */
+       font-family:'Lato', sans-serif ;
+       background-color: #ff9900;
+       width:4.2em;
+       height:2em;
+       border-radius: 10px;
+   }
+.clear{
+    color: transparent;
+}
+
+.section-2
+{
+  /* width: 100%;
+  height:100vh;
+  */
+
+opacity: 0.9;
+z-index: 1;
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
