@@ -30,7 +30,7 @@ body {
     width: 400px;
     height: 500px;
     /* border: #000000 3px solid; */
-    color: #ffffff;
+    color:#997777;
     border-radius: 20px;
     /* border-bottom-right-radius:50px; */
     position: relative;
@@ -86,24 +86,36 @@ body {
     margin-top: 20px;
   }
   input[type="text"]{
+    
     -webkit-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
-   -moz-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
-  box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
-  border-radius: 8px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
+    -moz-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
+   box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
+   border-radius: 8px;
+   font-family: 'Lato', sans-serif;
+   font-size: 1em;
+   background-color: rgba(0, 0, 0, 0.5);
+   background: transparent;
+   color:#997777;
+   border-color: #cccccc;
+   border: solid 2px;
+ 
   
   
   }
   input[type="password"]{
-    -webkit-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
-   -moz-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
-  box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
-  border-radius: 8px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-
-
+    
+      -webkit-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
+     -moz-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
+    box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: transparent;
+    color:#997777;
+    border-color: #cccccc;
+    border: solid 2px;
+  
   
   }
   button[type="submit"]{
@@ -111,14 +123,15 @@ body {
     -moz-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
    box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
    border-radius: 8px;
-   background-color:  #ff9900;
+   background-color:  #997777;
    height:2em;
    font-size: 1em;
    font-weight: bold;
   position: relative;
-  left:6.4em;
+  left:6em;
   width:5em;
-
+  color:#000;
+   
    
 
   }
@@ -151,7 +164,7 @@ body {
     -moz-box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
    box-shadow: 3px 3px 50px 1px rgba(0,0,0, 1);
    border-radius: 8px;
-   background-color:  #ff9900;
+   background-color:  #997777;
    height:2em;
    font-size: 1em;
    font-weight: bold;
@@ -160,7 +173,7 @@ body {
   top:2em;
   
   width:5em;
-  
+  color:#000;
 
   }
   span{
